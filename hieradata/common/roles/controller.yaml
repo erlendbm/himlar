@@ -34,7 +34,7 @@ libvirt::listen_tls:              false
 libvirt::listen_tcp:              true
 libvirt::auth_tcp:                none
 libvirt::sysconfig:
-  LIBVIRTD_ARGS:                  '--listen'
+  LIBVIRTD_ARGS:                  '--listen --verbose'
 libvirt::qemu_vnc_listen:         '0.0.0.0'
 libvirt::qemu_vnc_sasl:           false
 libvirt::qemu_vnc_tls:            false
