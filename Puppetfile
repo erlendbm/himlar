@@ -7,7 +7,7 @@ local  = 'iaas@git.norcams.org:'
 #
 # profile
 #
-mod 'profile', :ref => 'norcams-0.5.11',         :git => github + 'norcams/puppeels'
+mod 'profile', :ref => 'calico',                 :git => github + 'norcams/puppeels'
 
 #
 # profile::base::common
@@ -37,6 +37,10 @@ mod 'quagga', :ref => 'master',                  :git => github + 'LeslieCarr/pu
 #
 # profile::network::
 #
+mod 'dnsmasq', :ref => 'v1.2.0',                 :git => github + 'saz/puppet-dnsmasq'
+mod 'ipcalc', :ref => '1.2.2',                   :git => github + 'inkblot/puppet-ipca
+lc'
+mod 'named_interfaces', :ref => '0.2.0',         :git => github + 'norcams/puppet-named_interfaces'
 mod 'network', ref => 'v3.1.24'                  :git => github + 'example42/puppet-network'
 mod 'stdmod', ref => '929ba74496'                :git => github + 'stdmod/stdmod'
 

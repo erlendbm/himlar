@@ -2,6 +2,11 @@
 profile::base::common::manage_networkifs:    true
 
 network::interfaces_hash:
+  'em1':
+    onboot:    'no'
+  'em2':
+    onboot:    'yes'
+    bridge:    'br0'
   'br0':
     ipaddress: '10.171.92.11'
     netmask:   '255.255.255.0'
@@ -9,6 +14,3 @@ network::interfaces_hash:
     defroute:  yes
     onboot:    'yes'
     mtu:       '1500'
-    bridge_ports:
-               em2
-
