@@ -35,6 +35,12 @@ mod 'googleauthenticator', :ref => 'norcams-0.1.0', :git => github + 'norcams/pu
 mod 'quagga', :ref => 'master',                  :git => github + 'LeslieCarr/puppet-quagga'
 
 #
+# profile::network::
+#
+mod 'network', ref => 'v3.1.24'                  :git => github + 'example42/puppet-network'
+mod 'stdmod', ref => '929ba74496'                :git => github + 'stdmod/stdmod'
+
+#
 # profile::network::services
 #
 mod 'dnsmasq', :ref => 'norcams-0.1.0',          :git => github + 'norcams/puppet-dnsmasq'
